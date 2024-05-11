@@ -23,7 +23,7 @@ const uploadFileOnCloudinary = async (localFilePath) => {
     } catch (error) {
         console.log(error);
         // delete or unlink the file you have uploaded on your server.
-        fs.unlinkSync(localFilePath); // public/temp/rest.jpg
+       // fs.unlinkSync(localFilePath); // public/temp/rest.jpg
         return null;
     }
 }
