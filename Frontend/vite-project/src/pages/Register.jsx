@@ -49,6 +49,8 @@ const Register = () => {
             const config = {
                 headers: {
                     'content-type': 'multipart/form-data',
+                    'Origin': 'https://sap-new-five.vercel.app' // Specify the origin of the request
+
                 },
             };
 
