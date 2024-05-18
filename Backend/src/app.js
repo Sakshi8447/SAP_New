@@ -8,11 +8,7 @@ const app = express();
 // add all the middlewares
 
 app.use(cors({
-    origin: [
-        'https://sap-new-five.vercel.app',
-        'https://vercel.com/sakshis-projects-d2195278/sap-new/7T3M9yRReJanPqkZTkEVtqwS4Dzw',
-        'http://localhost:5173'
-    ],
+    origin: process.env.cross_origin,
     credentials: true
 }));
 
