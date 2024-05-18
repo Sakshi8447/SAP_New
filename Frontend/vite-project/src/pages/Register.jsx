@@ -46,15 +46,15 @@ const Register = () => {
             formData.append('companyname', companyName);
             formData.append('role', ['user'])
 
-            const config = {
-                headers: {
-                    'content-type': 'multipart/form-data',
-                    'Origin': 'https://sap-new-five.vercel.app' // Specify the origin of the request
+            // const config = {
+            //     headers: {
+            //         // 'content-type': 'multipart/form-data',
+                    // 'Origin': 'https://sap-new-five.vercel.app' // Specify the origin of the request
 
-                },
-            };
+            //     },
+            // };
 
-            const response = await axios.post(`${baseUrl}/api/v1/user/register`, formData, config);
+            const response = await axios.post(`${baseUrl}/api/v1/user/register`, formData);
             console.log('API Response:', response.data);
             setError(response.data.messsage + "Loading.....")
             
